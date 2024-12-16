@@ -9,8 +9,12 @@ int main () {
 
     int tamano_puntero = sizeof puntero_heap_hacia_arreglo_cadenas;
 
-    printf("%i", tamano_puntero);
+    for(int i = 0; puntero_heap_hacia_arreglo_cadenas[i] != '\0'; i++){
+        printf("%c\n", puntero_heap_hacia_arreglo_cadenas[i]);
+    }
 
-    printf("%c", puntero_heap_hacia_arreglo_cadenas[sizeof puntero_heap_hacia_arreglo_cadenas-1]);
+    printf("\n%i\n", tamano_puntero);
+
+    printf("%c\n", puntero_heap_hacia_arreglo_cadenas[sizeof puntero_heap_hacia_arreglo_cadenas-1]);
     return 0;
 }
